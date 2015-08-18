@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="274.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.main.view.TrainingWindowController">
+   <children>
+      <VBox alignment="CENTER" layoutX="154.0" layoutY="145.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="87.0" prefWidth="294.0" spacing="10.0" AnchorPane.bottomAnchor="168.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="152.0" AnchorPane.topAnchor="145.0">
+         <children>
+            <Label text="Type your password again and again.">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="154.0" layoutY="188.0" spacing="10.0" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="145.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label layoutX="181.0" layoutY="122.0" text="Total/">
+                           <font>
+                              <Font name="Georgia" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="correctLabel" text="Correct/">
+                           <font>
+                              <Font name="Georgia" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="failsLabel" layoutX="94.0" layoutY="10.0" text="Fail :">
+                           <font>
+                              <Font name="Georgia" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label fx:id="scoreLabel" layoutX="347.0" layoutY="122.0" text="999/999/999">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <PasswordField fx:id="passField" layoutX="154.0" layoutY="219.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#passField_OnKeyReleased" prefHeight="25.0" prefWidth="294.0" />
+            <Label fx:id="goodPasswordLabel" text="Label" visible="false">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox layoutX="341.0" layoutY="235.0" spacing="2.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <children>
+            <Button layoutX="329.0" layoutY="235.0" mnemonicParsing="false" onAction="#checkButtonPressed" text="Check" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="222.0" />
+            <Button fx:id="showPasswordButton" layoutX="384.0" layoutY="235.0" mnemonicParsing="false" onAction="#showPassButtonPressed" text="Show Original Password" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="72.0" />
+            <Button layoutX="534.0" layoutY="235.0" mnemonicParsing="false" onAction="#cancelButtonPressed" text="Cancel" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

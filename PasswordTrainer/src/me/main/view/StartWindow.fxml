@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.main.view.StartWindowController">
+   <children>
+      <Button layoutX="534.0" layoutY="291.0" mnemonicParsing="false" onAction="#CancelButtonClick" text="Cancel" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Button layoutX="474.0" layoutY="291.0" mnemonicParsing="false" onAction="#okButtonClick" prefHeight="25.0" prefWidth="52.0" text="OK" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="74.0" />
+      <HBox alignment="CENTER" layoutX="2.0" layoutY="188.0" prefHeight="25.0" prefWidth="600.0" spacing="5.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0">
+         <children>
+            <Label layoutX="116.0" layoutY="192.0" text="Type password to train:" />
+            <PasswordField fx:id="passField" layoutX="254.0" layoutY="188.0" onKeyReleased="#passField_onKeyReleased" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

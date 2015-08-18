@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.main.view.MainWindowController">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="158.0" layoutY="63.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label text="Password Trainer" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Georgia" size="60.0" />
+               </font>
+               <effect>
+                  <DropShadow height="23.97" offsetX="3.0" offsetY="3.0" radius="12.2275" width="26.94" />
+               </effect>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
